@@ -12,7 +12,7 @@ main {
 .package:active,
 .package:hover {
   border: 2px solid #ff5454 !important;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .package a {
@@ -45,10 +45,15 @@ main {
 #free {
   background: rgba(234, 252, 237, 0.95);
   float: right;
-  border-radius: none;
+  border-right: none;
   border-left: 4px solid #0e4f1f;
   text-align: right;
 }
+/* 
+#free:hover, 
+#free:active {
+  border-left-color: #ff5454;
+} */
 
 #premium {
   background: rgba(14, 79, 31, 0.95);
