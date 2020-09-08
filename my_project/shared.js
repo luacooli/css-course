@@ -3,8 +3,6 @@ var modal = document.querySelector('.modal')
 var selectPlanButtons = document.querySelectorAll('.plan button')
 var noModalButton = document.querySelector('.modal button')
 
-// console.log(backdrop)
-
 for (var i = 0; i < selectPlanButtons.length; i++) {
     selectPlanButtons[i].addEventListener('click', function() {
         modal.style.display = 'block'
@@ -12,7 +10,11 @@ for (var i = 0; i < selectPlanButtons.length; i++) {
     })
 }
 
-noModalButton.addEventListener('click', function() {
+backdrop.addEventListener('click', closeModal)
+
+noModalButton.addEventListener('click', closeModal)
+
+function closeModal() {
     modal.style.display = 'none'
     backdrop.style.display = 'none'
-})
+}
