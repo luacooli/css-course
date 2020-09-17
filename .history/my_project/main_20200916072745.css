@@ -120,10 +120,16 @@
   margin: 32px;
 }
 
-.key-feature__list {
+/* .key-feature__list {
   list-style: none;
   margin: 0;
   padding: 0;
+} */
+
+.key-feature {
+  /* display: inline-block; */
+  width: 100%;
+  vertical-align: top;
 }
 
 .key-feature__image {
@@ -143,12 +149,7 @@
 }
 
 @media (min-width: 40rem) {
-  .key-feature {
-    display: inline-block;
-    width: 30%;
-    max-width: 25rem;
-    vertical-align: top;
-  }
+
 }
 
 .modal {
