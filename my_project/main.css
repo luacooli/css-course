@@ -88,11 +88,13 @@
 }
 
 @media (min-width: 40rem) {
+  /* assigment => flex container */
   .plan__list {
     width: 100%;
     text-align: center;
   }
-
+  
+  /* assigment => flex container */
   .plan {
     display: inline-block;
     width: 30%;
@@ -100,7 +102,8 @@
     min-width: 13rem;
     max-width: 25rem;
   }
-
+  
+  /* assigment => flex container */
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
