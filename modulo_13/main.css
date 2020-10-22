@@ -23,8 +23,7 @@ body {
     flex-wrap: wrap;
     /* flex-flow: row wrap; */
     align-items: center;
-    justify-content: center;
-    align-content: center;
+    justify-content: flex-start;
 }
 
 .item-1 {
@@ -71,6 +70,8 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex: 0 1 auto;
+    /* flex: flex-grow flex-shrink flex-basis */
 }
 
 .item-6 {
