@@ -2,22 +2,29 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 .container {
+    height: 100%;
+    color: white;
     background-color: #bebebe;
+
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 4.5rem auto 4.5rem;
 }
 
 header {
     margin: 1rem;
     padding: 1rem;
-    color: white;
     text-align: center;
     background: #707070;
 
@@ -27,16 +34,12 @@ header {
 
 aside {
     margin: 1rem;
-    padding: 8rem 1rem 0;
-    color: white;
     text-align: center;
     background: #707070;
 }
 
 main {
     margin: 1rem;
-    padding: 8rem 1rem 0;
-    color: white;
     text-align: center;
     background: #707070;
 }
@@ -44,7 +47,6 @@ main {
 footer {
     margin: 1rem;
     padding: 1rem;
-    color: white;
     text-align: center;
     background: #707070;
 
