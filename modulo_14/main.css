@@ -1,8 +1,6 @@
 .container {
     margin: 20px;
     display: grid;
-    height: 800px;
-    width: 800px;
     /* grid-template-columns: 200px 2fr 20% 1fr; */
     grid-template-columns: repeat(4, 20%);
     grid-template-rows: 5rem minmax(10px, 20rem) 100px;
@@ -10,16 +8,25 @@
     grid-row: 10px; */
     grid-gap: 10px;
     grid-template-areas: "header header header header"
-                          ". . main main"
+                          ". side main main"
                           "footer footer footer footer";
     justify-items: stretch;
     align-items: stretch;
-    justify-content: center;
-    align-content: end;
+}
+
+@media (max-width: 40rem) {
+    .container  {
+        grid-template-rows: 5rem minmax(10px, 20rem) 150px 100px;
+        grid-template-areas: "header header header header"
+                              "main main main main"
+                              "side side side side"
+                              "footer footer footer footer";
+    }
 }
 
 .el1 {
     background: rgba(255, 154, 72, .5);
+    grid-area: side;
 }
 
 .el2 {
