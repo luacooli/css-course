@@ -164,6 +164,7 @@ main {
 
 .mobile-nav {
   display: none;
+  transform: translateX(-30rem);
   position: fixed;
   z-index: 101;
   top: 0;
@@ -171,6 +172,7 @@ main {
   background: white;
   width: 80%;
   height: 100vh;
+  transition: transform .2s ease-out;
 }
 
 .mobile-nav__items {
@@ -227,6 +229,7 @@ main {
   display: block !important;
   opacity: 1 !important;
   transform: translateY(0) !important;
+  transform: translateX(0) !important;
 }
 
 @media (min-width: 40rem) {
