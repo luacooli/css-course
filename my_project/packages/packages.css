@@ -24,6 +24,7 @@ main {
 .package:hover {
   border: 2px solid #ff5454 !important;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: push-up .6s ease-out forwards;
 }
 
 .package a {
@@ -103,7 +104,7 @@ main {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 951px) {
   .package {
     border-left: 4px solid #0e4f1f;
   }
@@ -115,5 +116,17 @@ main {
   #free:hover,
   #free:active {
     border-right-color: #ff5454;
+  }
+}
+
+@keyframes push-up {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(-1rem);
   }
 }
