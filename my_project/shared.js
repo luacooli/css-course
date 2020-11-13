@@ -53,14 +53,14 @@ toggleButton.addEventListener("click", function () {
   }, 10);
 });
 
-ctaButton.addEventListener('animationstart', (event) => {
-    console.log('Animation started', event);
-});
+// ctaButton.addEventListener('animationstart', (event) => {
+//   console.log('Animation started', event);
+// });
 
-ctaButton.addEventListener('animationend', (event) => {
-    console.log('Animation ended', event);
-});
+// ctaButton.addEventListener('animationend', (event) => {
+//   console.log('Animation ended', event);
+// });
 
-ctaButton.addEventListener('animationiteration', (event) => {
-    console.log('Animation itered', event);
-});
+// ctaButton.addEventListener('animationiteration', (event) => {
+//   console.log('Animation iteration', event);
+// });
